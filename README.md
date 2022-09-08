@@ -21,16 +21,18 @@
 
 - Syntax for representing regular expression => {pattern}
     - caret character to represent a string that starts with something
+Example:
 ```.find({ author: /pattern/})```
 
-```Ends with Hamedani```
  - Dollar sign in Regex indicates the end of the string
+ Example:
 ```.find({ author: /Hamedani$/i }) ```
     - appending an 'i' in the end makes it case insensitive
 
-```Contains Mosh```
 - ```.*``` in Regex means we can have zero or more characters
+Example:
 ```.find({ author: /.*Mosh.*/})```
+
 
 #### Use this command to import data into mongo database 
 ```mongoimport --db [nameOfDatabase] --collection courses --file [jsonFile] ```
